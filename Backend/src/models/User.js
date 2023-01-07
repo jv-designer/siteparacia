@@ -29,10 +29,8 @@ const UserSchema = new mongoose.Schema({
         required: true
     },
     files: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Files",
-        required: true,
-        default: "639a0682a797daccce032f69"
+        type: Array,
+        required: true
 
     },
 
