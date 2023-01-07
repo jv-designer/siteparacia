@@ -1,18 +1,9 @@
-//const morgan = require('morgan');
+// constando módulo mongoose
 const mongoose = require('mongoose');
 
+// função que conecta com o banco de dados
 
-//const path = require('path');
-
-/* Conexão com o banco de dados 
-mongoose.connect(process.env.MONGO_URL,
-    {
-    useNewUrlParser: true
-    }
-);*/
-
-
-const connetcDatabase = () => {
+function connetcDatabase() {
     console.log("estabelecendo conexão com database");
 
     mongoose.connect(
@@ -22,5 +13,8 @@ const connetcDatabase = () => {
 };
 
 
+// exportando função criada acima
+module.exports = {
+    connetcDatabase};
 
-module.exports = connetcDatabase;
+
