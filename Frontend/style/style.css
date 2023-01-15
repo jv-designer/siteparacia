@@ -35,15 +35,6 @@ body,ul,a,th,td {
     text-align: end;
   }
 
-  header{
-    display: flex;
-    flex-wrap: wrap;  
-    align-items: center;
-    justify-content: space-;
-    padding: 20px;
-    background-color: azure;
-    
-}
 
 .cia-img{
     max-width: 10%;
@@ -56,43 +47,52 @@ body,ul,a,th,td {
   height: 100%;
 }
 
-header > nav{
-  width: 360px;
-}
-
 
 #titulo > ul{
   font-weight: bold;
 }
 
-#contener{
+#formFiles{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
+  margin-top: 1%;
 }
 
-table{
-  border-collapse: collapse;
-}
-
-thead > tr > th{
-  background-color: #046aaa;
-  padding: 12px 15px;
+.thead{
+  background-color: #345991;
+  padding: 20px;
   text-align: left;
   color: #ffff;
+  border-radius: 15px 15px 0px 0px;
 }
 
-tbody > tr > td{
+#tbody{
   text-align: left;
-  padding: 12px 15px;
   border-bottom: 1px solid #333;
 }
 
-tbody > tr{
-  background-color: #ffff;
+.root{
+  padding: 20px;
 }
 
-tbody > tr:nth-of-type(even){
-  background-color: rgb(218, 225, 228);
+.root:nth-of-type(even){
+  background-color: rgb(244, 247, 248);
+}
+
+
+
+.n-padding {
+  padding-right:0px;
+  padding-left: 0px;
+}
+
+.root:hover{
+  background-color: #ddedff;
+}
+
+.gh{
+  height: 100%;
+  margin-left: 80px;
 }
