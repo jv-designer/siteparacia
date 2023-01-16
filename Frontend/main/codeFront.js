@@ -1,10 +1,3 @@
-// rota https://vrjw9i-3000.preview.csb.app/
-
-
-const usuario = {}
-
-
-
 // Obtém os dados de login do formulário
 const loginForm = document.getElementById("loginForm");
 
@@ -33,11 +26,11 @@ const login = (email, password) => {
       body: JSON.stringify({email: email, password: password})
     });
     const content = await rawResponse.json();
-    localStorage.setItem("name", content.document.name);
-    localStorage.setItem("files", content.document.files);
+    localStorage.setItem("id", content.document.id);
+    localStorage.setItem("type", content.document.type);
+    
 
-
-    // Redireciona o usuário para a página protegida
+    // Redireciona o usuário para aplicação
     window.location = "index.html";
   })();
 }
@@ -49,3 +42,8 @@ loginForm.addEventListener("submit", (e) => {
   let password = document.getElementById("password").value;
   login(email, password);
   });
+
+
+
+
+
