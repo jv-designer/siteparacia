@@ -11,36 +11,42 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-dark bg-dark">
-      <div style="color: aliceblue;display: flex;">
-        <h3 class="gh">Anexo de documentos</h3>
-        <h3 class="gh">Anexo de documentos</h3>
+    <nav class="navbar">
+      <div id="etapa" style="color: rgb(255, 255, 255);display: flex;">
+        <div style="left: 35vw;" class="divisor_navbar"></div>
+        <div style="left: calc(35vw*2);" class="divisor_navbar"></div>
+        <div id="etapa_focusArea"></div>
+        <h3>Envio de documentos</h3>
+        <h3>Aprovação das artes</h3>
+        <h3>Conclusão</h3>
       </div>
     </nav>
-    <p>Texto</p>
+    <div style="margin: 20px;">
+      <h4>Envio de documentos</h4>
+      <p>Para que possamos começar os preparativos para dar seguimento a caçada dos talentos precisaremos que prencha o formulario a baixo.</p>
+    </div>
   </header>
   <main>
-    <div style="padding-left:16px; border: 1px solid rgb(69, 69, 69);">
-      <div class="mainArea">
-        <form id="formFiles" action="">
-          <div class="table" style="width: 99%;">
-            <div class="thead row">
-              <div class="col">Nome</div>
-              <div class="col">Arquivos</div>
-              <div class="col">Prazo para envio</div>
-              <div class="col">Concluído</div>
-            </div>
-            <div id="tbody">
-              <!-- arquivos do cliente -->
-              
-            </div>
-            <div class="row">
-              <button class="btn btn-primary" type="submit">Enviar</button>
-            </div>
+    <div class="mainArea">
+      <form id="formFiles" action="">
+        <div class="table" style="width: 99%;">
+          <div class="thead row">
+            <div class="col">Nome</div>
+            <div class="col">Arquivos</div>
+            <div class="col">Prazo para envio</div>
+            <div class="col center_">Concluído</div>
           </div>
-        </form>
-      </div>
+          <div id="tbody">
+            <!-- arquivos do cliente -->
 
+          </div>
+          <div class="row">
+            <button class="btn btn-primary" style="border-radius: 0px 0px 0.35rem 0.35rem!important;"
+              type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

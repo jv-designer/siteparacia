@@ -12,6 +12,12 @@ body,ul,a,th,td {
     background-color: #333;
   }
   
+  .navbar{
+    background-color: #ce212b;
+    padding: 20px;
+  }
+  
+  
   .topnav a {
     float: left;
     color: #f2f2f2;
@@ -58,10 +64,11 @@ body,ul,a,th,td {
   justify-content: center;
   width: 100%;
   margin-top: 1%;
+  margin-left: 1%;
 }
 
 .thead{
-  background-color: #345991;
+  background-color: #3d78b9;
   padding: 20px;
   text-align: left;
   color: #ffff;
@@ -70,11 +77,11 @@ body,ul,a,th,td {
 
 #tbody{
   text-align: left;
-  border-bottom: 1px solid #333;
 }
 
 .root{
   padding: 20px;
+  background-color: #ffff;
 }
 
 .root:nth-of-type(even){
@@ -92,7 +99,56 @@ body,ul,a,th,td {
   background-color: #ddedff;
 }
 
-.gh{
+#etapa{
+  display: flex;
+  justify-content: space-around;
+  column-gap: 90px;
+  margin: 0px;
   height: 100%;
-  margin-left: 80px;
+  width: 100%;
+}
+
+
+.label_text_{
+  color: rgb(91, 91, 91);
+  font-size: small;
+}
+
+
+.mainArea{
+  display: flex;
+  justify-content: center;
+  background-color: #e5e5e5;
+}
+
+.row{
+  margin: 0px !important;
+}
+
+
+.center_{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.divisor_navbar{
+  position: absolute;
+  height: 82px;
+  top: 0px;
+  width: 2px;
+  border-radius: 0px 190px 90px 0px;
+  background-color: rgba(255, 203, 203, 0.602);
+  
+}
+
+#etapa_focusArea{
+  position: absolute;
+  height: 82px;
+  top: 0px;
+  width: 1300px;
+  left: 674px;
+  background-color: rgba(0, 0, 0, 0.155);
 }
